@@ -1,24 +1,43 @@
-.head-fixed{
-    position: fixed;
-    z-index: 999;
-    height: 100vh;
-    width: 80px;
-    overflow: hidden;
-}
-.head-fixed .navbar {
+.header .header-content {
     position: relative;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-.head-fixed .navbar a {
+.header .logo-name {
+    height: 80px;
+    display: flex;
+}
+.header .logo {
+    width: 40px;
+    height: 40px;
+}
+.header .name {
+    position: relative;
+    margin-left: 5px;
+    letter-spacing: 2.5px;
+}
+.header .name a {
     text-transform: uppercase;
-    transform: rotate(90deg);
-    padding: 10px 12px;
-    letter-spacing: .25em;
+    color: var(--text-color-def);
+}
+.header .navbar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.header .navbar a {
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-color-def);
+    transition: color .5s;
+}
+.header .navbar a:hover {
+    color: var(--text-color-onn);
 }
 
 /*PAGS*/

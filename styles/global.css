@@ -1,15 +1,22 @@
 :root {
-
     /* background */
-    --bg-def: #000;
+    --back-color-def: #000000;
+    --back-color-alt: #005D63;
+    --back-color-aux: #FFFFFF;
+
+    --back-color-off: #005D63;
+    --back-color-onn: #008000;
 
     /* color text */
-    --cl-def: #DDD;
-    --cl-alt: #FFF;
-    --cl-aux: #000;
+    --text-color-def: #FFFFFF;
+    --text-color-alt: #005D63;
+    --text-color-aux: #000000;
+
+    --text-color-off: #005D63;
+    --text-color-onn: #008000;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -17,12 +24,58 @@
     font-family: sans-serif;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: var(--bg-def);
+    background: var(--back-color-def);
 }
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 999;
+}
+.section {
+    display: none;
+}
+
+
+/* classes custom */
+.space-start {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.space-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.space-end {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
 
 .grid{
     position: absolute;
@@ -40,6 +93,7 @@ body{
     justify-content: space-between;
 }
 .grid:nth-child(1){
+    display: block;
 }
 .grid:nth-child(2){
     display: none;
