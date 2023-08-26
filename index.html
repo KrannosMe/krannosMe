@@ -13,56 +13,221 @@
             <div class="header-content space-between">
                 <div class="logo-name space-center">
                     <div class="logo">
-                        <a href="#home"><img class="logo" src="assets/imgs/Vk-Logo.png" alt=""></a>
+                        <a onclick="currentPage (0)"  href="#home"><img class="logo" src="assets/imgs/Vk-Logo.png" alt=""></a>
                     </div>
                     <div class="name">
-                        <a href="#home"><span>rannos.</span></a>
+                        <a onclick="currentPage (0)" href="#home"><span>rannos.</span></a>
                     </div>
                 </div>
                 <div class="navbar space-end">
-                    <a href="#about" class="link"><span>sobre</span></a>
-                    <a href="#resume" class="link"><span>portifólio</span></a>
-                    <a href="#resume" class="link"><span>contacto</span></a>
+                    <a onclick="currentPage (1)" href="#about" class="link"><span>sobre</span></a>
+                    <a onclick="currentPage (2)"  href="#servcs" class="link"><span>serviços</span></a>
+                    <a onclick="currentPage (3)"  href="#contact" class="link"><span>contacto</span></a>
                 </div>
             </div>
         </header>
 
         <!-- ROUTER -->
         <session class="sections">
+            <!-- HOME -->
             <div class="section home" id="home">
-                <div class="home-content space-start">
+                <div class="home-content space-center">
                     <div class="less-me">
                         <p class="text1">Olá, Eu sou</p>
-                        <h1><span>V</span>alderik <span>F</span>ernando</h1>
-                        <p class="text2">desenvolvedor front-end & design</p>
-                        <div class="btns">
-                            <button>Portifólio</button>
-                            <button>Download CV</button>
-                        </div>    
+                        <h1 class="text2">
+                            <span>V</span>alderik <span>F</span>ernando
+                        </h1>
+                        <p class="text3">desenvolvedor front-end & design</p>
+
+                        <div class="socials space-center">
+                            <div>
+                                <span><i class="fab fa-facebook"></i></span>
+                                <span><i class="fab fa-instagram"></i></span>
+                                <span><i class="fab fa-twitter"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="section about" id="about">
+                <div class="pageTitle">
+                    <div class="content space-center">
+                        <h1>Quem Sou</h1>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="myPhoto">
+                        <img src="assets/imgs/vk.jpg" alt="My Photo">
                     </div>
 
-                    <div class="socials">
-                        <div>
-                            <span><i class="fab fa-facebook"></i></span>
-                            <span><i class="fab fa-instagram"></i></span>
-                            <span><i class="fab fa-twitter"></i></span>
-                            <span><i class="fab fa-github"></i></span>
+                    <div class="aboutMe">
+                        <div class="divText">
+                            <span class="paragraph">
+                                <h1>Eu sou criativo e dinamico</h1></br></br>
+                                Desenvolvedor web front-end e designer UX/UI cursado em html, css e javascript. </br>
+                                Trabalha na <a href="">CRAFTZZONE</a> como design. Publica alguns de seus trabalhos no seu <a href="">Pinterest</a>.</br> 
+                                Intregante dos <a href="">Onikaze Squad</a> grupo musical com <span class="follow">10</span> seguidores no <a href="">Youtube</a> </br>
+                                e artisticamente conhecido como Krannos. Gosta de musica, fotografia, desporto e animes.</br>  
+                                No seu tempo livre ouve música, compõe, jogar vooleiboll e frequenta academia. </br></br>
+                            </span>
+
+                            <div class="contactMe">
+                                <div>
+                                    <span class="name">
+                                        <h4 class="name fa fa-pen-nib"></h4>
+                                        <label class="lbname">Valderik Fernando</label>
+                                    </span>
+                                    <span class="adress">
+                                        <h4 class="lbAdress fa fa-location-dot"></h4>
+                                        <label class="adressHere">Angola | Sumbe</label>
+                                    </span>
+                                </div>
+                                
+                                <div>
+                                    <span class="email">
+                                        <h4 class="name fa fa-envelope"></h4>
+                                        <label class="lbname">valderickfernando@gmail.com</label>
+                                    </span>
+                                    <span class="phonne">
+                                        <h4 class="lbPhonne fa fa-phone"></h4>
+                                        <label class="adressHere">+244 940 214 644</label>
+                                    </span>
+                                </div>
+                            </div> </br></br>
+
+                            <div class="divButtons">
+                                <button>Portifólio</button>
+                                <button>Baixar CV</button>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICS -->
+            <div class="section servics" id="servics">
+                <div class="pageTitle">
+                    <div class="content space-center">
+                        <h1>Prestados</h1>
+                    </div>
+                </div>
+                <div class="servics-content space-center">
+                    <div class="servicsBox space-center">
+                        <div class="servicsIcone">
+                            <img src="assets/imgs/website.png" alt="">
+                        </div>
+                        <div class="servicsInfo space-center">
+                            <h4 class="label">Webpage Design</h4>
+                            <p class="describe">
+                                Criação de  paginas web, blogs e portifólios com hospedagem gratuita durante 30 dias.
+                            </p>
                         </div>
                     </div>
 
+                    <div class="servicsBox space-center">
+                        <div class="servicsIcone">
+                            <img src="assets/imgs/devices.png" alt="">
+                        </div>
+                        <div class="servicsInfo space-center">
+                            <h4 class="label">Responsivo Design</h4>
+                            <p class="describe">
+                                Design de layouts responsivos(desktop, mobile e tablets) direcionados a paginas web.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="servicsBox space-center">
+                        <div class="servicsIcone">
+                            <img src="assets/imgs/products.png" alt="">
+                        </div>
+                        <div class="servicsInfo space-center">
+                            <h4 class="label">Produto Design</h4>
+                            <p class="describe">Criação de logos para seus produtos como cartões, camisas, empresa etc.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="grid" id="about">
-                <div class="grid-container">
 
+            <!-- CONTACTS -->
+            <div class="section contact" id="contact">
+                <div class="titlePage">
+                    <h1>Fala Comigo</h1>
+                </div>
+
+                <div class="contact-content space-around">
+                    <div class="left top space-center">
+                        <div class="text">
+                            <p>
+                                Olá, se gostas do que vês e estás enteressado na sua propria logo marca ou pagina web. Entre em contacto
+                                com seu email ou me encontre nas redes socias.
+                                deixe seu feedback do que achas-te dos meus projectos obrigado. 
+                            </p>
+                        </div>
+                        <div class="link">
+                            <span><i class="fab fa-facebook"></i></span>
+                            <span><i class="fab fa-instagram"></i></span>
+                            <span><i class="fab fa-twitter"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="right down space-center">
+                        <form action="" method="post" class="form">
+                            <div class="inputField">
+                                <div class="inputBox mail">
+                                    <input type="email" name="" id="" placeholder="e-mail" required>
+                                    <span class="space-center"><i class="fa fa-g"></i></span>
+                                </div>
+                                <div class="inputBox mgs">
+                                    <input type="text" name="" id="" placeholder="mensagem" required>
+                                    <span class="space-center"><i class="fa fa-message"></i></span>
+                                </div>
+                                <div class="inputBox send">
+                                    <button type="submit">enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="grid" id="resume">
-                <div class="grid-container">
+            
+            <!-- PORTIFOLIO -->
+            <div class="section folio" id="folio">
+                <div class="folio-content space-center">
+                    <!-- Filters --------- -->
+                    <ul class="folio-filters space-center">
+                        <li data-filter="all" onclick="changeFilterActive()" class="filter filter-active">Todos</li>
+                        <li data-filter="product" onclick="changeFilterActive()" class="filter">Produto Design</li>
+                        <li data-filter="responsive" onclick="changeFilterActive()" class="filter">Responsivo Design</li>
+                        <li data-filter="Webpage" onclick="changeFilterActive()" class="filter">Webpage Design</li>
+                    </ul>
 
+                    <!-- folio-filter ---- -->
+                    <div class="folio-filter">
+                        <!-- HINNER PROJECTS WITH JS AND JSON LIKE LIB -->
+                    </div>
                 </div>
             </div>
         </session>
+
+
+        <!-- SIDESBAR -->
+        <div class="sidebar space-center">
+            <div class="content space-end">
+                
+                <div class="nums space-start">
+                    <span class="num onn">1</span>
+                    <span class="num">2</span>
+                    <span class="num">3</span>
+                    <span class="num">4</span>
+                </div>
+                
+                <div class="icons">
+                    <span onclick="currentPage (4)"><i class="fa fa-expand"></i></span>
+                </div>
+
+            </div>
+        </div>
     </div>
 </body>
 
@@ -72,5 +237,7 @@
 <link rel="stylesheet" href="assets/icons/css/all.css">
 
 <!-- | Js | -->
+<script src="script/jquery.min.js"></script>
+<script src="script/function.min.js" ></script>
 
 </html>

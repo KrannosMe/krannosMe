@@ -1,7 +1,7 @@
 :root {
     /* background */
     --back-color-def: #000000;
-    --back-color-alt: #005D63;
+    --back-color-alt: #C1C1C1;
     --back-color-aux: #FFFFFF;
 
     --back-color-off: #005D63;
@@ -9,11 +9,19 @@
 
     /* color text */
     --text-color-def: #FFFFFF;
-    --text-color-alt: #005D63;
+    --text-color-alt: #C1C1C1;
     --text-color-aux: #000000;
 
     --text-color-off: #005D63;
     --text-color-onn: #008000;
+
+    /* variable folio */
+    --box-width: 300px;
+    --box-height: 300px;
+    --box-transtion-easing: ease;
+    --box-transition-duration: 800ms;
+    --box-center-width: 400px;
+    --box-center-height: 400px;
 }
 
 * {
@@ -52,6 +60,68 @@ body {
     height: 100%;
     padding: 20px;
 } 
+.sections .section:nth-child(1) { z-index: 1; display: block; }
+.sections .section:nth-child(2) { z-index: 1; display: none; }
+.sections .section:nth-child(3) { z-index: 1; display: none; }
+.sections .section:nth-child(4) { z-index: 1; display: none; }
+.sections .section:nth-child(5) { z-index: 999; display: none;  position: fixed;}
+
+
+.pageTitle {
+    position: relative; 
+    width: 100%;
+    height: 80px;
+    margin-bottom: 80px;
+}
+
+.pageTitle .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.pageTitle .content h1 {
+    text-align: center;
+    font-size: 14pt;
+    margin-top: 8px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--text-color-onn);
+}
+
+.about .pageTitle .content h1::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: .2;
+    font-size: 36pt;
+    content: 'sobre';
+    font-weight: 900;
+    color: var(--text-color-alt);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.servics .pageTitle .content h1::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: .2;
+    font-size: 36pt;
+    content: 'serviços';
+    font-weight: 900;
+    color: var(--text-color-alt);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.folio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--back-color-def);
+    z-index: 999;
+}
 
 /* classes custom */
 .space-start {
@@ -80,35 +150,4 @@ body {
     align-items: center;
 }
 
-
-
-
-
-
-
-
-
-.grid{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-}
-.grid .grid-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    padding: 50px;
-    justify-content: space-between;
-}
-.grid:nth-child(1){
-    display: block;
-}
-.grid:nth-child(2){
-    display: none;
-}
-.grid:nth-child(3){
-    display: none;
-}
+.onn { color: var(--text-color-onn); }
